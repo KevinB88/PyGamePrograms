@@ -1,0 +1,47 @@
+Programming notes
+
+
+
+
+**--Advanced GitHub Tips/Tricks--**
+
+Rebasing ('git rebase')
+
+Integrating changes from one branch into another.
+
+Interactive rebase: ('git rebase -i')
+
+Cherry-picking: ('git cherry-pick'):
+take a commit from one branch and apply it onto another branch
+Applying bug-fixes to two branches without merging the two
+
+Stashing: ('git stash'):
+shelves changes in order to work on a different task.
+
+Submodules ('git submodule'):
+include or embed one repo within another as a subdirectory
+
+Worktrees('git worktree')
+multiple working trees attached to the same repo:
+working on multiple branches without switching contexts
+within the current
+
+Reflog('git reflog')
+
+Bisect ('git bisect')
+binary search tool for finding the commit that introduced a bug.
+Used for finding possibly problematic commits.
+
+Advanced merge-strategies:
+ours, theirs, rebase, interactive
+
+**--Advanced GitHub Tips/Tricks--**
+
+**---Creating aliases on the window's terminal---**
+
+Set-Alias ll Get-ChildItem
+
+
+**---Creating aliases on the window's terminal---**
+
+

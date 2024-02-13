@@ -14,3 +14,21 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
+
+'''
+git push --set-upstream origin maser
+
+this can abbreviated as:
+
+git push -u origin master 
+
+pulling specific content from within a directory from github 
+
+enabling sparse checkout:
+
+git config core.spareCheckout true
+
+
+'''

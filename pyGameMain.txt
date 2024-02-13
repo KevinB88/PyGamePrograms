@@ -1,0 +1,39 @@
+PyGame documentation:
+
+https://www.pygame.org/docs/
+
+**--Random methods--**
+
+import random
+
+random.random()
+    #outputs a random float between 0 -> 1
+
+random.uniform(a,b)
+    returns a random float number
+    between the specified value a -> b
+
+randomized integer values:
+
+random.randint(a,b)
+random.randrange(start, stop[,step])
+
+#picking from a sequence
+random.choice(seq)
+random.choices(pop, weights=None, *, cum_weights=None, k=1)
+
+shuffling:
+
+random.shuffle(x[, random])
+
+Seeding:
+
+random.seed(a=None, version=2)
+
+random.sample(population, k)
+returns a k length list of unique elements
+chosen from the population sequence
+
+
+
+
