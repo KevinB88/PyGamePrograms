@@ -1,0 +1,73 @@
+'''
+the following line:
+if __name__ = "__main__"
+
+this is used to determine whether the python script
+is running as main or is running on another script
+what is the meaning of this?
+
+If we are running the function from another script or the current
+
+running the main program, or we imported this from another script
+
+running a python script directly by executing the file:
+will set the __name__ variable to "__main__" for the scrpt
+
+if the script is being imported into another script or module
+then the __name__ variable will evaluate to the name of the script
+as opposed to the main variable.
+
+This is used as a way to separate the functionality of the code
+between scripts used to define functions and others used to run the code
+
+
+*---> defining modules: <---*
+
+Modules contain the definitions and statements
+of python code.
+These can be used to define classes, variables,
+and functions.
+
+Used for namespacing: encapsulation of functions,
+classes, and variables within a separate namespace
+
+*---> defining modules: <---*
+
+*---> Example module <---*
+
+we write a file called: my_module.py
+we then provide a single function inside:
+
+def greet(name):
+    print(f"Hello, {name})
+
+We write another file called: main.py
+
+import my_module
+
+then we could include the function like such:
+
+my_module.greet("Alice")
+
+OR, you can import specific attributes from the module:
+(functions, classes, variables) This allows for you
+to utilize the functions, classes, and variables, without
+prefixing the attributes:
+
+from my_module import greet
+
+greet("bob)
+
+
+
+
+'''
+
+
+<--* Namespacing *-->
+
+
+
+
+
+
