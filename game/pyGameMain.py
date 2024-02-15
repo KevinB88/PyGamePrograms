@@ -3,10 +3,6 @@ import pygame
 import random
 
 
-def rng(a,b):
-    return random.uniform(a, b)
-
-
 # pygame setup
 pygame.init()
 screen = pygame.display.set_mode((1280, 720))
@@ -16,6 +12,15 @@ dt = 0
 radius = 40
 
 player_pos = pygame.Vector2(screen.get_width() / 2, screen.get_height() / 2)
+
+random_x = random.randint(100, 1180)
+random_y = random.randint(100, 620)
+random_radius = random.randint(5, 50)
+computer_position_1 = pygame.Vector2(50, 50)
+computer_position_2 = pygame.Vector2(150, 150)
+computer_position_3 = pygame.Vector2(250, 250)
+computer_position_4 = pygame.Vector2(500, 500)
+computer_position_5 = pygame.Vector2(random_x, random_y)
 
 while running:
     # poll for events
@@ -27,16 +32,12 @@ while running:
     # fill the screen with a color to wipe away anything from last frame
     screen.fill("white")
 
-    computer_position_1 = pygame.Vector2(50, 50)
-    computer_position_2 = pygame.Vector2(150, 150)
-    computer_position_3 = pygame.Vector2(250, 250)
-    computer_position_4 = pygame.Vector2(500, 500)
-
     pygame.draw.circle(screen, "black", player_pos, radius)
     pygame.draw.circle(screen, "red", computer_position_1, 10)
     pygame.draw.circle(screen, "red", computer_position_2, 10)
     pygame.draw.circle(screen, "red", computer_position_3, 10)
     pygame.draw.circle(screen, "red", computer_position_4, 10)
+    pygame.draw.circle(screen, "red", computer_position_5, random_radius)
 
     keys = pygame.key.get_pressed()
     if keys[pygame.K_w]:
@@ -54,6 +55,8 @@ while running:
     if keys[pygame.K_p]:
         radius -= 10
 
+    if player_pos == computer_position_5:
+        random_radius = 0
 
     # flip() the display to put your work on screen
     pygame.display.flip()

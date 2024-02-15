@@ -35,5 +35,13 @@ returns a k length list of unique elements
 chosen from the population sequence
 
 
+--** code explanation **--
+
+ ballrect = ballrect.move(speed)
+    if ballrect.left < 0 or ballrect.right > width:
+        speed[0] = -speed[0]
+    if ballrect.top < 0 or ballrect.bottom > height:
+        speed[1] = -speed[1]
+
 
 
